@@ -23,10 +23,11 @@ function reloadStocks() {
 							var stockname = this.symbol;
 							var stockCurrentPrice = this.LastTradePriceOnly;
 							var changeInPercent = this.ChangeinPercent;
+							var currency = this.Currency;
 
 							$("#stocks_station_table tr:last").append("<td>" + stockname + "</td>");
-							$("#stocks_station_table tr:last").append("<td>" + stockCurrentPrice + " € </td>");
-							$("#stocks_station_table tr:last").append("<td>" + changeInPercent + " % </td>");
+							$("#stocks_station_table tr:last").append("<td>" + stockCurrentPrice + " " + currency + "</td>");
+							$("#stocks_station_table tr:last").append("<td>" + changeInPercent + "</td>");
 
 						}
 						i++;
