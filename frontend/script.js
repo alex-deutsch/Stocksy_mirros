@@ -8,15 +8,16 @@ function reloadStocks() {
 	var env = "store://datatables.org/alltableswithkeys";
 	var stocks = "<?php echo getConfigValue('stocksy_stocks'); ?>";
 	var query = "select * from yahoo.finance.quotes where symbol='" + stocks + "'";
-	// var name_mode = "<?php echo getConfigValue('tanken_name_mode'); ?>";
 		url = url + "?q=" + query + "&format=json" + "&env=" + env;
 
 		$.get(url).done(function(data){
 				$("#stocks_station_table").empty();
-
-				// if (data.status == "ok"){
 					i = 0;
-					$.each(data.query.results.quote, function() {
+					var json = data.query.results.quote;
+					if(!(json instanceof Array)){
+						json = [json];
+					}
+						$.each(json, function() {
 						if (i < 7){
 							$("#stocks_station_table").append("<tr></tr>");
 
@@ -32,11 +33,10 @@ function reloadStocks() {
 						}
 						i++;
 					});
-				// }
 		});
 
-		// alle 30 Minuten aktualiseren
+		// reload every 10 minutes
 		window.setTimeout(function() {
 			reloadStocks();
-		}, 1800000);
+		}, 6000000);
 }
