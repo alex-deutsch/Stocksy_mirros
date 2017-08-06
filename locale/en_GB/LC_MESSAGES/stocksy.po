@@ -1,0 +1,36 @@
+# mirr.OS Tanken Module v1.1.6
+# Copyright (C) 2017
+# Marco Roth <info@marco-roth.ch>, 2017
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mirr.OS Stocksy Module V1.0.0\n"
+"POT-Creation-Date: 2016-05-07 11:02+0200\n"
+"PO-Revision-Date: 2017-02-26 00:30+0100\n"
+"Last-Translator: Alexander Deutsch <mail@alexanderdeutsch.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "stocksy_title"
+msgstr "Stocksy"
+
+msgid "stocksy_description"
+msgstr "overview of your shares in stock market and their current value"
+
+msgid "stocksy_stocks_config_header"
+msgstr "Stocksy configuration"
+
+msgid "stocksy_reset_config"
+msgstr "reset configuration"
+
+msgid "stocksy_stocks"
+msgstr "Symbol id's of stocks comma seperated, e.g. APC.de, TL0.de"
+
+msgid "stocksy_save"
+mgstr "Save configuration"

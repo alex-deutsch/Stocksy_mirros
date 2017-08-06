@@ -1,0 +1,27 @@
+#stocks_station_sub_title {
+	font-size: 10pt;
+	margin-left: 10px;
+	text-transform: capitalize;
+	line-height: 10px;
+}
+
+#stocks_station_table td {
+	padding-right: 20px;
+	padding-top: 0px !important;
+}
+
+#stocks_station_table td:nth-child(1) {
+	max-width: 125px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#stocks_station_table td:nth-child(2) {
+	text-transform: capitalize;
+	padding-right: 40px;
+	max-width: 330px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

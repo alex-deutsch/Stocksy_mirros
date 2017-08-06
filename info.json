@@ -1,0 +1,18 @@
+{
+	"module": {
+		"name": "Stocksy",
+		"version": "1.0.0",
+		"description": "Zeigt dir die aktuellen kurse deiner Aktien",
+		"module_url": "http://alexanderdeutsch.de/stocksyglancr",
+		"download_url": "http://alexanderdeutsch.de/stocksyglancr",
+		"category": "news",
+		"release_date": "2017-10-16",
+		"last_update": "2017-10-16"
+	},
+	"creator": {
+		"name": "Alexander Deutsch",
+		"contact": "mail@alexanderdeutsch.de",
+		"website": "http://www.alexanderdeutsch.de",
+		"profile": "http://www.alexanderdeutsch.de/aboutme"
+	}
+}
