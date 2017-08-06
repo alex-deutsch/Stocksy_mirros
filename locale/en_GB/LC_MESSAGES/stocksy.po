@@ -1,6 +1,6 @@
-# mirr.OS Tanken Module v1.1.6
+# mirr.OS Stocksy Module v1.0.0
 # Copyright (C) 2017
-# Marco Roth <info@marco-roth.ch>, 2017
+# Alexander Deutsch <mail@alexanderdeutsch.de>, 2017
 #
 msgid ""
 msgstr ""
