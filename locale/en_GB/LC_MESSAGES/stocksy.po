@@ -37,3 +37,6 @@ msgstr "Symbol id's of stocks comma seperated, e.g. APC.de, TL0.de"
 
 msgid "stocksy_save"
 msgstr "Save configuration"
+
+msgid "stocksy_stocks_config_help_description"
+msgstr "For finding the right symbols for your Stocks go checkout https://finance.yahoo.com"

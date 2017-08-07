@@ -6,6 +6,7 @@
 ?>
 
 <h6><?php echo _('stocksy_stocks_config_header'); ?></h6>
+<div><?php echo _('stocksy_stocks_config_help_description'); ?></div>
 <input type="text" id="stocksy_stocks" placeholder="<?php echo _('stocksy_stocks'); ?>" value="<?php echo $stocksy_stocks; ?>"/>
 
 <div id="stocksy_error" style="color:red"></div>
