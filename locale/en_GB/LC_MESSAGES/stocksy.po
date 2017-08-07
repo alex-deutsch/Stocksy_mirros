@@ -29,8 +29,11 @@ msgstr "Stocksy configuration"
 msgid "stocksy_reset_config"
 msgstr "reset configuration"
 
+msgid "stocksy_reset_config_message"
+msgstr "would you like to reset your stored stocksy configuration ?"
+
 msgid "stocksy_stocks"
 msgstr "Symbol id's of stocks comma seperated, e.g. APC.de, TL0.de"
 
 msgid "stocksy_save"
-mgstr "Save configuration"
+msgstr "Save configuration"

@@ -23,14 +23,17 @@ msgstr "Stocksy"
 msgid "stocksy_description"
 msgstr "Zeigt dir die aktuellen Kurse deiner Aktien"
 
+msgid "stocksy_save"
+msgstr "Konfiguration speichern"
+
 msgid "stocksy_stocks_config_header"
 msgstr "Stocksy Konfiguration"
 
 msgid "stocksy_reset_config"
 msgstr "Konfiguration zurücksetzen"
 
+msgid "stocksy_reset_config_message"
+msgstr "Möchtest du die gespeicherte Konfiguration wirklich zurücksetzen"
+
 msgid "stocksy_stocks"
 msgstr "Symbol id's deiner Aktien mit komma getrennt, z.B. APC.de, TL0.de"
-
-msgid "stocksy_save"
-mgstr "Konfiguration speichern"
