@@ -4,33 +4,30 @@ $(document).ready(function () {
 
 function reloadStocks() {
 
-	var url = "https://query.yahooapis.com/v1/public/yql";
-	var env = "store://datatables.org/alltableswithkeys";
-	var stocks = "<?php echo getConfigValue('stocksy_stocks'); ?>";
-	var query = "select * from yahoo.finance.quotes where symbol='" + stocks + "'";
-		url = url + "?q=" + query + "&format=json" + "&env=" + env;
-
-		$.get(url).done(function(data){
-				$("#stocks_station_table").empty();
-					i = 0;
-
-					var json = data.query.results.quote;
-					if(!(json instanceof Array)){
-						json = [json];
-					}
-
+	var url = "http://f1re.de/stocksy/getQuote.php";
+	var apikey = "";
+	var symbols = "<?php echo getConfigValue('stocksy_stocks'); ?>";
+	var fields 	= "fiftyTwoWkHigh,fiftyTwoWkHighDate,fiftyTwoWkLow,fiftyTwoWkLowDate";
+    var mode  	= "I";
+	var jerq 	= "false";
+	var queryURLQuotes = url + "?apikey=" + apikey +"&symbols=" + symbols + "&fields=" + fields + "&mode=" + mode + "&jerq=" + jerq;
+	
+		$.get(queryURLQuotes).done(function(data){
+			$("#stocks_station_table").empty();
+					var i = 0;
+					var json = data.results;
 						$.each(json, function() {
 						if (i < 7){
 							$("#stocks_station_table").append("<tr></tr>");
 
-							var stockname = this.symbol;
-							var stockCurrentPrice = this.LastTradePriceOnly;
-							var changeInPercent = this.ChangeinPercent;
-							var currency = this.Currency;
+							var stockname = this.name;
+							var stockCurrentPrice = this.lastPrice;
+							var changeInPercent = this.percentChange;
+							var currency = this.unitCode;
 
-							var priceString = stockCurrentPrice ;
-							if (currency != null) {
-								priceString = priceString + " " + currency;
+							var priceString = stockCurrentPrice;
+							if (currency != null && currency == 2) {
+								priceString = priceString + " $";
 							}
 
 							$("#stocks_station_table tr:last").append("<td>" + stockname + "</td>");

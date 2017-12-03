@@ -1,4 +1,4 @@
-# mirr.OS Stocksy Module v1.0.0
+# mirr.OS Stocksy Module v1.1.0
 # Copyright (C) 2017
 # Alexander Deutsch <mail@alexanderdeutsch.de>, 2017
 #
@@ -6,12 +6,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mirr.OS Stocksy Module V1.0.0\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2017-08-06 12:27+0200\n"
+"PO-Revision-Date: 2017-12-03 15:18+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Last-Translator: Alexander Deutsch <mail@alexanderdeutsch.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -39,4 +39,4 @@ msgid "stocksy_stocks"
 msgstr "Symbol id's deiner Aktien mit komma getrennt, z.B. APC.de, TL0.de"
 
 msgid "stocksy_stocks_config_help_description"
-msgstr "Um die richtigen Symbole zu finden anhand der Firmen / Aktien Namen schaue einfach bei https://finance.yahoo.com vorbei"
+msgstr "Um die richtigen Symbole zu finden anhand der Firmen / Aktien Namen schaue einfach bei https://www.barchart.com vorbei. (Momentan werden hier leider nur keine deutschen Märkte unterstützt)"
