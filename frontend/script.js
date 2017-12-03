@@ -22,7 +22,7 @@ function reloadStocks() {
 
 							var stockname = this.name;
 							var stockCurrentPrice = this.lastPrice;
-							var changeInPercent = this.percentChange;
+							var changeInPercent = this.percentChange + "%";
 							var currency = this.unitCode;
 
 							var priceString = stockCurrentPrice;
