@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 function reloadStocks() {
 
-	var url = "http://f1re.de/stocksy/getQuote.php";
+	var url = "https://f1re.de/stocksy/getQuote.php";
 	var apikey = "";
 	var symbols = "<?php echo getConfigValue('stocksy_stocks'); ?>";
 	var fields 	= "fiftyTwoWkHigh,fiftyTwoWkHighDate,fiftyTwoWkLow,fiftyTwoWkLowDate";
