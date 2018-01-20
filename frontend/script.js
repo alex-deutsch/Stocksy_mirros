@@ -16,13 +16,18 @@ function reloadStocks() {
 				for(key in data){
 					if (i < 7){
 						$("#stocks_station_table").append("<tr></tr>");
-						var stock = data[key]
-						var quote = stock.quote
+						var quote = data[key].quote;
 						var stockname = quote.companyName;
-						var stockCurrentPrice = quote.iexRealtimePrice;
 						var changeInPercent = quote.changePercent + "%";
-
-						var priceString = stockCurrentPrice + " $";
+						var realTime = quote.iexRealtimePrice;
+						var priceString;
+						if (realTime != null) {
+							priceString = realTime;
+						}
+						else {
+							priceString = quote.latestPrice;
+						}
+						priceString = priceString + " $";
 
 						$("#stocks_station_table tr:last").append("<td>" + stockname + "</td>");
 						$("#stocks_station_table tr:last").append("<td>" + priceString + "</td>");

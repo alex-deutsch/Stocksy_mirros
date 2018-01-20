@@ -39,4 +39,4 @@ msgid "stocksy_stocks"
 msgstr "Symbol id's deiner Aktien mit komma getrennt, z.B. APC.de, TL0.de"
 
 msgid "stocksy_stocks_config_help_description"
-msgstr "Um die richtigen Symbole zu finden anhand der Firmen / Aktien Namen schaue einfach bei https://www.barchart.com vorbei. (Momentan werden hier leider nur keine deutschen Märkte unterstützt)"
+msgstr "Um die richtigen Symbole zu finden anhand der Firmen / Aktien Namen schaue einfach bei https://www.iextrading.com vorbei. (Momentan werden hier leider nur keine deutschen Märkte unterstützt)"
