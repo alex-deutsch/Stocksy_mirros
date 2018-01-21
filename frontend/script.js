@@ -38,8 +38,8 @@ function reloadStocks() {
 				}
 	});
 
-		// reload every 10 minutes
+		// reload every 5 minutes
 		window.setTimeout(function() {
 			reloadStocks();
-		}, 6000000);
+		}, 300000);
 }
