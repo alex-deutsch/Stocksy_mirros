@@ -1,7 +1,7 @@
 {
 	"module": {
 		"name": "Stocksy",
-		"version": "1.2.2",
+		"version": "1.2.3",
 		"description": "Zeigt dir die aktuellen kurse deiner Aktien",
 		"module_url": "http://alexanderdeutsch.de/stocksyglancr",
 		"download_url": "http://alexanderdeutsch.de/stocksyglancr",
