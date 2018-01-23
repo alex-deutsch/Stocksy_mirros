@@ -18,7 +18,7 @@ function reloadStocks() {
 						$("#stocks_station_table").append("<tr></tr>");
 						var quote = data[key].quote;
 						var stockname = quote.companyName;
-						var changeInPercent = Math.round(quote.changePercent * 1000) / 100 + " %";
+						var changeInPercent = Math.round(quote.changePercent * 10000) / 100 + " %";
 						var realTime = quote.iexRealtimePrice;
 						var priceString;
 						if (realTime != null) {
